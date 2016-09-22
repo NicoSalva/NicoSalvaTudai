@@ -4,6 +4,7 @@ class ConfigApp{
   public static $ACTION_MOSTRAR_PAQUETES = 'mostrar_paquetes';
   public static $ACTION_MOSTRAR_PRESUPUESTO = 'mostrar_presupuesto';
   public static $ACTION_MOSTRAR_CONTACTO = 'mostrar_contacto';
+  public static $ACTION_GUARDAR_TURNO = 'guardar_turno';
   }
 
  ?>

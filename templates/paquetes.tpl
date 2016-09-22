@@ -50,36 +50,24 @@
     <h2 class="package" >Solicite el Pack acorde a sus necesidades <span class="label label-default">New</span></h2>
   </div>
 
-  <form class="" action="index.html" method="get">
+  <form class="" action="index.php?action=guardar_turno" method="post">
     <div class="row">
       <div class="col-md-4">
-        <input type="text" name="name" value="" placeholder="Ingrese su nombre">
+        <input type="text" name="cliente" value="" placeholder="Ingrese su nombre">
       </div>
       <div class="col-md-4">
-        <div class="dropdown">
-          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-            TURNO
-            <span class="caret"></span>
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-            <li><a href="#">Mañana</a></li>
-            <li><a href="#">Tarde</a></li>
-            <li><a href="#">Noche</a></li>
-          </ul>
-        </div>
-
+        <select name="turno">
+           <option value="manana" selected="selected">Mañana</option>
+           <option value="tarde">Tarde</option>
+           <option value="noche">Noche</option>
+       </select>
       </div>
       <div class="col-md-4">
-        <div class="dropdown">
-          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-            PACK
-            <span class="caret"></span>
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-            <li><a href="#">BASICO</a></li>
-            <li><a href="#">MEDIUM</a></li>
-            <li><a href="#">FULL</a></li>
-          </ul>
+          <select name="paquete">
+             <option value="3" selected="selected">BASICO</option>
+             <option value="2">MEDIUM</option>
+             <option value="1">FULL</option>
+         </select>
         </div>
       </div>
     </div>
@@ -88,4 +76,5 @@
         <input type="submit" name="enviar" value="ENVIAR">
       </div>
     </div>
+
   </form>
